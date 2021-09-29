@@ -49,4 +49,7 @@ pgAdmin에 처음 들어가게되면 아래와 같은 목록이 오른쪽 화면
 
 그럼 오른쪽 하위메뉴 extension에 postgis가 생긴 것을 확인할 수 있습니다.
 
+또한 새로고침 시 schema - functions 에서 postgis 관련 함수들이 잔뜩 생겨난 걸 볼 수 있습니다.
+![image](https://user-images.githubusercontent.com/52690419/135285374-47428ad1-5518-4e03-a099-cc16dff59cc9.png)
+
 
