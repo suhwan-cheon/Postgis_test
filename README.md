@@ -53,3 +53,35 @@ pgAdmin에 처음 들어가게되면 아래와 같은 목록이 오른쪽 화면
 ![image](https://user-images.githubusercontent.com/52690419/135285374-47428ad1-5518-4e03-a099-cc16dff59cc9.png)
 
 
+### 7. 한국식 좌표 변환
+PostGIS에서 지원하는 한국 좌표계는 변환하는 데 필요한 인자들이 잘못되어 있어 수정이 필요하다고 합니다.
+아래의 링크에서 SQL 파일을 다운받아 실행해줍니다.
+https://www.osgeo.kr/205
+
+이후 database - [Query Tools] 로 들어가 다운받은 파일을 오픈해준 후 재생 버튼을 눌러주세요.
+<img width="1025" alt="스크린샷 2021-09-30 오전 10 03 33" src="https://user-images.githubusercontent.com/52690419/135368897-bdd65b31-d496-49f5-8e8c-38f9729ef6b0.png">
+
+### 8. QGIS 설치
+
+QGIS는 데이터 뷰, 편집, 분석을 제공하는 크로스 플랫폼 자유-오픈 소스 데스크톱 지리 정보 체계 응용 프로그램입니다.
+QGIS는 PostgreSQL에 있는 공간정보를 불러와 바로 시각화할 수 있기 때문에 사용한다고합니다.
+저는 "안정적인 버전" 이라고 쓰여있는 3.16 버전을 다운받았습니다. (용량이 많이 크네요 😭)
+다운로드 링크 : https://qgis.org/ko/site/
+
+❗️ 주의 : mac은 보안 인증을 못 받아서 강제로 열어야합니다. 저는 마우스 우클릭 후 option을 누른채 열기를 눌러 열었습니다.
+
+### 9. QGIS에서 맵 열기
+
+저는 아래 깃허브에 있는 파이썬 파일을 이용했습니다.
+https://github.com/giswqs/qgis-earthengine-examples/blob/master/Basemaps/qgis_basemaps.py
+
+해당 파일을 데스크탑에 다운받은 후, qgis에서 파일을 열고, 실행(run)해줍시다. 대략적인 방법은 아래와 같습니다.
+<img width="1149" alt="스크린샷 2021-09-30 오전 10 37 48" src="https://user-images.githubusercontent.com/52690419/135371471-4fa6017b-14d7-4857-9c15-49cab33085a6.png">
+
+이후 왼쪽 창에서 XYZ 타일 하위 목록에 보면 여러가지 지도가 생긴 것을 확인할 수 있습니다.
+저는 구글 하이브리드 위성 지도를 통해 우리학교를 찾아보았습니다.
+![image](https://user-images.githubusercontent.com/52690419/135371745-43120948-9f7f-4da4-ade3-87b1b3df93f6.png)
+
+
+
+ㄸㅐ무
