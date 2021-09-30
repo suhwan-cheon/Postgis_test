@@ -83,5 +83,3 @@ https://github.com/giswqs/qgis-earthengine-examples/blob/master/Basemaps/qgis_ba
 ![image](https://user-images.githubusercontent.com/52690419/135371745-43120948-9f7f-4da4-ade3-87b1b3df93f6.png)
 
 
-
-ㄸㅐ무
