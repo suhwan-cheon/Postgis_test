@@ -82,4 +82,16 @@ https://github.com/giswqs/qgis-earthengine-examples/blob/master/Basemaps/qgis_ba
 저는 구글 하이브리드 위성 지도를 통해 우리학교를 찾아보았습니다.
 ![image](https://user-images.githubusercontent.com/52690419/135371745-43120948-9f7f-4da4-ade3-87b1b3df93f6.png)
 
+### 10. shapefile 불러오기
 
+```
+shp2pgsql -I -s <SRID> <PATH/TO/SHAPEFILE> <SCHEMA>.<DBTABLE> | psql -d <DATABASE>
+```
+
+The command parameters are:
+<SRID>Spatial reference identifier
+<PATH/TO/SHAPEFILE>Full path to the shapefile (such as C:\MyData\roads\roads.shp)
+<SCHEMA>Target schema where the new table will be created
+<DBTABLE>New database table to be created (usually the same name as the source shapefile)
+<DATABASE>Target database where the table will be created
+  
