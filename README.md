@@ -89,11 +89,11 @@ shp2pgsql -I -s <SRID> <PATH/TO/SHAPEFILE> <SCHEMA>.<DBTABLE> | psql -d <DATABAS
 ```
 
 설명
-SRID : Spatial reference identifier
-PATH/TO/SHAPEFILE : Full path to the shapefile (such as C:\MyData\roads\roads.shp)
-SCHEMA : Target schema where the new table will be created
-DBTABLE : New database table to be created (usually the same name as the source shapefile)
-DATABASE : Target database where the table will be created
+SRID : Spatial reference identifier<br/>
+PATH/TO/SHAPEFILE : Full path to the shapefile (such as C:\MyData\roads\roads.shp)<br/>
+SCHEMA : Target schema where the new table will be created<br/>
+DBTABLE : New database table to be created (usually the same name as the source shapefile)<br/>
+DATABASE : Target database where the table will be created<br/>
 
 example
 ```
