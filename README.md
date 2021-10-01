@@ -88,10 +88,14 @@ https://github.com/giswqs/qgis-earthengine-examples/blob/master/Basemaps/qgis_ba
 shp2pgsql -I -s <SRID> <PATH/TO/SHAPEFILE> <SCHEMA>.<DBTABLE> | psql -d <DATABASE>
 ```
 
-The command parameters are:
-<SRID>Spatial reference identifier
-<PATH/TO/SHAPEFILE>Full path to the shapefile (such as C:\MyData\roads\roads.shp)
-<SCHEMA>Target schema where the new table will be created
-<DBTABLE>New database table to be created (usually the same name as the source shapefile)
-<DATABASE>Target database where the table will be created
-  
+설명
+SRID : Spatial reference identifier
+PATH/TO/SHAPEFILE : Full path to the shapefile (such as C:\MyData\roads\roads.shp)
+SCHEMA : Target schema where the new table will be created
+DBTABLE : New database table to be created (usually the same name as the source shapefile)
+DATABASE : Target database where the table will be created
+
+example
+```
+shp2pgsql -I -s 3857 ~/Downloads/MoGeospatialData/MO_2012_Senate_Districts.shp public.geospatial-data | psql -p 5432 -d vetting-geospatial
+```
